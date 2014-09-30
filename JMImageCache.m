@@ -7,6 +7,7 @@
 //
 
 #import "JMImageCache.h"
+#import "UIImage+animatedGIF.h"
 
 static inline NSString *JMImageCacheDirectory() {
 	static NSString *_JMImageCacheDirectory;
@@ -86,7 +87,7 @@ static inline NSString *cachePathForKey(NSString *key) {
             return;
         }
         
-        UIImage *i = [[UIImage alloc] initWithData:data];
+        UIImage *i = [self dataIsGif:data] ? [UIImage animatedImageWithAnimatedGIFData:data] : [[UIImage alloc] initWithData:data];
         if (!i)
         {
             NSMutableDictionary *errorDetail = [NSMutableDictionary dictionary];
@@ -154,6 +155,26 @@ static inline NSString *cachePathForKey(NSString *key) {
         }
     });
 }
+
+- (BOOL)dataIsGif:(NSData*)data
+{
+    BOOL isGIF = NO;
+    
+    uint8_t c;
+    [data getBytes:&c length:1];
+    
+    switch (c)
+    {
+        case 0x47:  // probably a GIF
+            isGIF = YES;
+            break;
+        default:
+            break;
+    }
+    
+    return isGIF;
+}
+
 
 #pragma mark -
 #pragma mark Getter Methods
@@ -224,8 +245,9 @@ static inline NSString *cachePathForKey(NSString *key) {
 }
 
 - (UIImage *) imageFromDiskForKey:(NSString *)key {
-	UIImage *i = [[UIImage alloc] initWithData:[NSData dataWithContentsOfFile:cachePathForKey(key) options:0 error:NULL]];
-	return i;
+    NSData *data = [NSData dataWithContentsOfFile:cachePathForKey(key) options:0 error:NULL];
+    UIImage *i = [self dataIsGif:data] ? [UIImage animatedImageWithAnimatedGIFData:data] : [[UIImage alloc] initWithData:data];
+    return i;
 }
 
 - (UIImage *) imageFromDiskForURL:(NSURL *)url {
