@@ -13,11 +13,11 @@
 		30B341EB166D1F9100B8F678 /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 30B341E8166D1F9100B8F678 /* Default-568h@2x.png */; };
 		30B341EC166D1F9100B8F678 /* Default.png in Resources */ = {isa = PBXBuildFile; fileRef = 30B341E9166D1F9100B8F678 /* Default.png */; };
 		30B341ED166D1F9100B8F678 /* Default@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 30B341EA166D1F9100B8F678 /* Default@2x.png */; };
-		30BD1D5015BE205700792C47 /* UIImageView+JMImageCache.m in Sources */ = {isa = PBXBuildFile; fileRef = 30BD1D4F15BE205700792C47 /* UIImageView+JMImageCache.m */; };
 		30BD1D5415BE2BF000792C47 /* placeholder.png in Resources */ = {isa = PBXBuildFile; fileRef = 30BD1D5215BE2BF000792C47 /* placeholder.png */; };
 		30BD1D5515BE2BF000792C47 /* placeholder@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 30BD1D5315BE2BF000792C47 /* placeholder@2x.png */; };
-		445C25F319DA67100089F18B /* UIImage+animatedGIF.m in Sources */ = {isa = PBXBuildFile; fileRef = 445C25F219DA67100089F18B /* UIImage+animatedGIF.m */; };
 		445C25F519DA67E40089F18B /* ImageIO.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 445C25F419DA67E40089F18B /* ImageIO.framework */; };
+		445C260019DA6B0B0089F18B /* UIImage+animatedGIF.m in Sources */ = {isa = PBXBuildFile; fileRef = 445C25FD19DA6B0B0089F18B /* UIImage+animatedGIF.m */; };
+		445C260119DA6B0B0089F18B /* UIImageView+JMImageCache.m in Sources */ = {isa = PBXBuildFile; fileRef = 445C25FF19DA6B0B0089F18B /* UIImageView+JMImageCache.m */; };
 		B2C2B02A131072D100BCA7EB /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = B2C2B020131072D100BCA7EB /* AppDelegate.m */; };
 		B2C2B02B131072D100BCA7EB /* DemoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B2C2B022131072D100BCA7EB /* DemoViewController.m */; };
 		B2C2B02D131072D100BCA7EB /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = B2C2B027131072D100BCA7EB /* main.m */; };
@@ -32,13 +32,13 @@
 		30B341E8166D1F9100B8F678 /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
 		30B341E9166D1F9100B8F678 /* Default.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Default.png; sourceTree = "<group>"; };
 		30B341EA166D1F9100B8F678 /* Default@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default@2x.png"; sourceTree = "<group>"; };
-		30BD1D4E15BE205700792C47 /* UIImageView+JMImageCache.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "UIImageView+JMImageCache.h"; path = "../UIImageView+JMImageCache.h"; sourceTree = "<group>"; };
-		30BD1D4F15BE205700792C47 /* UIImageView+JMImageCache.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "UIImageView+JMImageCache.m"; path = "../UIImageView+JMImageCache.m"; sourceTree = "<group>"; };
 		30BD1D5215BE2BF000792C47 /* placeholder.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = placeholder.png; sourceTree = "<group>"; };
 		30BD1D5315BE2BF000792C47 /* placeholder@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "placeholder@2x.png"; sourceTree = "<group>"; };
-		445C25F119DA67100089F18B /* UIImage+animatedGIF.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+animatedGIF.h"; sourceTree = "<group>"; };
-		445C25F219DA67100089F18B /* UIImage+animatedGIF.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+animatedGIF.m"; sourceTree = "<group>"; };
 		445C25F419DA67E40089F18B /* ImageIO.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ImageIO.framework; path = System/Library/Frameworks/ImageIO.framework; sourceTree = SDKROOT; };
+		445C25FC19DA6B0B0089F18B /* UIImage+animatedGIF.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "UIImage+animatedGIF.h"; path = "../UIImage+animatedGIF.h"; sourceTree = "<group>"; };
+		445C25FD19DA6B0B0089F18B /* UIImage+animatedGIF.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "UIImage+animatedGIF.m"; path = "../UIImage+animatedGIF.m"; sourceTree = "<group>"; };
+		445C25FE19DA6B0B0089F18B /* UIImageView+JMImageCache.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "UIImageView+JMImageCache.h"; path = "../UIImageView+JMImageCache.h"; sourceTree = "<group>"; };
+		445C25FF19DA6B0B0089F18B /* UIImageView+JMImageCache.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "UIImageView+JMImageCache.m"; path = "../UIImageView+JMImageCache.m"; sourceTree = "<group>"; };
 		B2C2B01F131072D100BCA7EB /* AppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		B2C2B020131072D100BCA7EB /* AppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
 		B2C2B021131072D100BCA7EB /* DemoViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DemoViewController.h; sourceTree = "<group>"; };
@@ -143,10 +143,10 @@
 			children = (
 				B2C2B031131072E200BCA7EB /* JMImageCache.h */,
 				B2C2B032131072E200BCA7EB /* JMImageCache.m */,
-				30BD1D4E15BE205700792C47 /* UIImageView+JMImageCache.h */,
-				30BD1D4F15BE205700792C47 /* UIImageView+JMImageCache.m */,
-				445C25F119DA67100089F18B /* UIImage+animatedGIF.h */,
-				445C25F219DA67100089F18B /* UIImage+animatedGIF.m */,
+				445C25FE19DA6B0B0089F18B /* UIImageView+JMImageCache.h */,
+				445C25FF19DA6B0B0089F18B /* UIImageView+JMImageCache.m */,
+				445C25FC19DA6B0B0089F18B /* UIImage+animatedGIF.h */,
+				445C25FD19DA6B0B0089F18B /* UIImage+animatedGIF.m */,
 			);
 			name = JMImageCache;
 			sourceTree = "<group>";
@@ -219,11 +219,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				B2C2B02A131072D100BCA7EB /* AppDelegate.m in Sources */,
-				445C25F319DA67100089F18B /* UIImage+animatedGIF.m in Sources */,
 				B2C2B02B131072D100BCA7EB /* DemoViewController.m in Sources */,
+				445C260119DA6B0B0089F18B /* UIImageView+JMImageCache.m in Sources */,
 				B2C2B02D131072D100BCA7EB /* main.m in Sources */,
+				445C260019DA6B0B0089F18B /* UIImage+animatedGIF.m in Sources */,
 				B2C2B033131072E200BCA7EB /* JMImageCache.m in Sources */,
-				30BD1D5015BE205700792C47 /* UIImageView+JMImageCache.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
